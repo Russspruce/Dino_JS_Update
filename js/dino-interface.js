@@ -18,6 +18,11 @@ var displayDino = function(dinoArray) {
   dinoArray = [];
 };
 
+function Replay() { //Gives message for replay that will refresh page
+  var response = confirm("Would you like to play again?");
+   if(response)location.reload();
+}
+
 $(document).ready(function(){
   var dinoTest = new Dino();
 
@@ -26,17 +31,18 @@ $(document).ready(function(){
     dinoTest.getDino(displayDino);
   });
 
-
   $("#user_form").submit(function(event) {
     event.preventDefault();
     debugger;
     var userGuess = $('#user_input').val();
     if (userGuess === dinoArray2[2]) {
-      alert("you win!");
-    } else if (userGuess === dinoArray2[0] || userGuess === dinoArray2[1]){
-      alert("you lose");
+      alert("You win!");
+      Replay();
+    } else if ((userGuess === dinoArray2[0]) || (userGuess === dinoArray2[1])){
+      alert("You lose");
+      Replay();
     } else {
-      alert("hi");
+      alert("Did you misspell that?");
     }
   });
 });

@@ -1,5 +1,5 @@
 var apiKey = require('./../.env').apiKey;
-var fakeDinos = ["testasaurous", "fakeasaurous", "Gorosaurus", "Rhedosaurus", "Godzillasaurus", "Indominus Rex", "Titanosaurus", "Terrasaurus", "Dancrodon", "Quailadon"];
+var fakeDinos = ["Fakeasaurous", "Gorosaurus", "Rhedosaurus", "Aryonodon", "Godzillasaurus", "Indominus Rex", "Titanosaurus", "Terrasaurus", "Dancrodon", "Umbrogia", "Ajaxius", "Tristopteryx", "Quailadon", "Sassasaurous", "Potatadon", "Geneseaurus", "Droloron", "Portlasaurus", "Thanathorus", "Walesurus", "Whoviraptor"];
 var dinoArray = [];
 
 

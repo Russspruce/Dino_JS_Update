@@ -2,12 +2,10 @@ var apiKey = require('./../.env').apiKey;
 var Dino = require('./../js/dino.js').DinoModule;
 
 var displayDino = function(dinoArray) {
-
+  var shuffleDino = new Dino();
+  shuffleDino.shuffle(dinoArray);
   console.log(dinoArray);
   dinoArray = [];
-// var splitDinos = dinos.split(" ");
-//   dinoArray.push(splitDinos[0]);
-//   dinoArray.push(splitDinos[1]);
 };
 
 $(document).ready(function(){
@@ -15,12 +13,7 @@ var dinoTest = new Dino();
 
   $('#dino').submit(function(event) {
     event.preventDefault();
-
-
       dinoTest.getDino(displayDino);
-      // var randomNumber = Math.floor(Math.random() * fakeDinos.length);
-      // dinoArray.push(fakeDinos[randomNumber]);
-
   });
 });
 

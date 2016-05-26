@@ -13,7 +13,6 @@ exports.DinoModule.prototype.getDino = function(displayFunction) {
     var splitDinos = dinos.split(" ");
     dinoArray.push(splitDinos[0]);
     dinoArray.push(splitDinos[1]);
-    // dinoTest.getDino(displayDino);
     var randomNumber = Math.floor(Math.random() * fakeDinos.length);
     dinoArray.push(fakeDinos[randomNumber]);
     displayFunction(dinoArray);

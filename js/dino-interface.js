@@ -19,8 +19,7 @@ var displayDino = function(dinoArray) {
 };
 
 function Replay() {
-  var response = confirm("Would you like to play again?");
-   if(response)location.reload();
+location.reload();
 }
 
 $(document).ready(function(){
@@ -44,7 +43,8 @@ $(document).ready(function(){
       dinoArray2 = [];
     } else {
       alert("Did you misspell that?");
-      // dinoArray2 = [];
+      dinoArray2 = [];
+      Replay();
     }
   });
 
@@ -52,6 +52,7 @@ $(document).ready(function(){
     event.preventDefault();
     Replay();
   });
+
   $('#refresh2').submit(function(event){
     event.preventDefault();
     Replay();

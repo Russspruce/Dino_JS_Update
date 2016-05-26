@@ -1,0 +1,42 @@
+$blue : #C8FFF7;
+$mint : #D4FED8;
+$supergreen : #E7FEAE;
+$brown : #ACA690;
+$navy : #015883;
+$sorbet: #FCD1A4;
+$garnet: #932D42;
+$bluedream: #0B486B;
+
+
+body {
+  background: $blue;
+  text-align: center;
+}
+.container{
+  background: $supergreen;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 25px;
+  border: 2px solid $navy;
+  h1{
+    font-family: Roboto Slab;
+    color: $garnet;
+  }
+  button {
+    border:1px solid $navy;
+    background: $sorbet;
+    color: $navy;
+    margin: 20px;
+  }
+.jumbotron {
+  h2{
+    color: $bluedream;
+  }
+  background: $mint;
+  border: 3px solid $brown;
+  }
+}
+
+.hidden{
+  display: none;
+}

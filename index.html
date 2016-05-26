@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab|Rock+Salt' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="build/css/vendor.css">
+  <link rel="stylesheet" href="build/css/styles.css">
   <script src="build/js/vendor.min.js"></script>
   <script rel="text/javascript" src="build/js/app.js"></script>
   <title>Dino</title>
@@ -28,7 +30,21 @@
     </div>
     <form id="user_form">
       <input id="user_input" type="text" class="form-control">
-      <button type="submit">Guess</button>
+      <button type="submit" class="btn">Guess</button>
+    </form>
+  </div>
+  <div id="win" class="hidden">
+    <h1>Awesome!  You know your dinosaurs!</h1>
+    <img src="http://i.giphy.com/UMOStVUKWlqbS.gif">
+    <form id="refresh">
+      <button class="btn-success" id="refresh">Play Again</button>
+    </form>
+  </div>
+  <div id="lose" class="hidden">
+    <img src="http://bestanimations.com/Animals/Reptiles/Dinosaurs/dinosaur-animation-18.gif">
+    <h1>You have failed!</h1>
+    <form id="refresh2">
+      <button class="btn-success" id="refresh2">Play Again</button>
     </form>
   </div>
 </body>

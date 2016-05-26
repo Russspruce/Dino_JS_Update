@@ -4,7 +4,16 @@ var Dino = require('./../js/dino.js').DinoModule;
 var displayDino = function(dinoArray) {
   var shuffleDino = new Dino();
   shuffleDino.shuffle(dinoArray);
-  console.log(dinoArray);
+  var dinoChoices = [];
+
+  // console.log(dinoArray);
+  // dinoChoices.push(dinoArray[0]);
+  // dinoChoices.push(dinoArray[1]);
+  // dinoChoices.push(dinoArray[2]);
+  // console.log(dinoChoices);
+  $("#dino1random").text(dinoArray[0]);
+  $("#dino2random").text(dinoArray[1]);
+  $("#dino3random").text(dinoArray[2]);
   dinoArray = [];
 };
 
